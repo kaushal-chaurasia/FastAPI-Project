@@ -1,7 +1,3 @@
 runtime: python310
 
-entrypoint: gunicorn -k uvicorn.workers.UvicornWorker blog.main2:app
-
-handlers:
-- url: /.*
-  script: auto
+entrypoint: uvicorn blog.main2:app --host=0.0.0.0 --port=$PORT
