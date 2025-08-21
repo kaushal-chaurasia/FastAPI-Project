@@ -17,6 +17,6 @@ app.include_router(user.router)
 
 @app.get("/")
 def home():
-    return {"message": "Hello from Railway!"}
+    return {"message": "Hello from FastAPI on GCP!"}
 
 
